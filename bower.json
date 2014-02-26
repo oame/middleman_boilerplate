@@ -1,0 +1,15 @@
+{
+  "name": "middleman_boilerplate",
+  "private": true,
+  "dependencies": {
+    "jquery": "*",
+    "jquery-waypoints": "~2.0",
+    "jquery.transit": "~0.9.9",
+    "jquery.easing": "~1.3.0",
+    "font-awesome": "~4.0.3",
+    "fancybox": "~2.1.5",
+    "html5shiv": "~3.7.0",
+    "selectivizr": "~1.0.2",
+    "modernizr": "~2.7.1"
+  }
+}
