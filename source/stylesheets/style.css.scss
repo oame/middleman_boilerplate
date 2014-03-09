@@ -25,12 +25,18 @@ a {
   @include link-colors($font_color);
 }
 
-p, h1, h2, h3 {
+p {
   line-height: 1.62em;
+  text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3 {
+  line-height: 1.333em;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
-  line-height: 1.333em;
+  font-size: 35px;
 }
 
 h2 {
