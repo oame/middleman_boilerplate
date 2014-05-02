@@ -7,8 +7,7 @@ html
 
     title == data.page.title || "Middleman"
 
-    == stylesheet_link_tag "all"
-    == javascript_include_tag "all"
+    == stylesheet_link_tag "application"
 
   body class="#{page_classes}"
     header.header
@@ -24,4 +23,4 @@ html
     /[if (gte IE 6)&(lte IE 8)]
       == javascript_include_tag "ie"
 
-    == javascript_include_tag "all"
+    == javascript_include_tag "application"

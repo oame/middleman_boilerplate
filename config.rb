@@ -53,7 +53,11 @@ activate :livereload
 
 # Deploy
 activate :deploy do |deploy|
-  # see https://github.com/tvaughan/middleman-deploy
+  # deploy.method   = :ftp
+  # deploy.host     = "example.com"
+  # deploy.path     = "/public_html"
+  # deploy.user     = "hoge"
+  # deploy.password = "fuga"
 end
 
 set :css_dir, 'stylesheets'
@@ -64,6 +68,10 @@ ready do
   # Bower configuration
   sprockets.append_path "#{root}/vendor/components"
 end
+
+###
+# Environment
+###
 
 # Development-specific configuration
 configure :development do
@@ -81,6 +89,15 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
 
+  # Minify HTML
+  activate :minify_html
+
+  # Image compress
+  activate :imageoptim
+
+  # Gzip
+  activate :gzip
+
   # Enable cache buster
   #activate :asset_hash
 
@@ -92,7 +109,7 @@ configure :build do
 
   # Google Nalytics
   activate :google_analytics do |ga|
-    ga.tracking_id = ''
+    ga.tracking_id = 'UA-***'
   end
 end
 
