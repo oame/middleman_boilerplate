@@ -2,7 +2,7 @@
 install fontforge
 install eot-tuils
 
-# ImageMin
+# ImageOptim
 install advancecomp
 install gifsicle
 install jhead

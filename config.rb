@@ -75,6 +75,9 @@ end
 
 # Development-specific configuration
 configure :development do
+  # FontCustom
+  activate :fontcustom
+
   # Google Analytics
   activate :google_analytics do |ga|
     ga.tracking_id = false

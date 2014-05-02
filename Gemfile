@@ -24,6 +24,7 @@ gem 'oj'
 
 # Asset libraries
 gem 'ceaser-easing'
+gem 'middleman-fontcustom'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
