@@ -22,9 +22,14 @@ gem 'middleman-google-analytics'
 gem 'therubyracer'
 gem 'oj'
 
-# Asset libraries
-gem 'ceaser-easing'
+# Favicon
+gem 'middleman-favicon-maker'
+
+# WebFont
 gem 'middleman-fontcustom'
+
+# Easing
+gem 'ceaser-easing'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
