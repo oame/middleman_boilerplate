@@ -2,25 +2,21 @@ doctype html
 html
   head
     meta charset="utf-8"
-
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
 
-    title == data.page.title || "Middleman"
+    title = data.page.title || "Middleman"
 
-    == stylesheet_link_tag "application"
+    = stylesheet_link_tag "application"
 
   body class="#{page_classes}"
     header.header
       .logo
 
     .wrapper
-      == yield
+      = yield
 
     footer.footer
       p Footer
 
     / Scripts
-    /[if (gte IE 6)&(lte IE 8)]
-      == javascript_include_tag "ie"
-
-    == javascript_include_tag "application"
+    = javascript_include_tag "application"

@@ -3,9 +3,6 @@
 @import "compass/reset";
 @import "compass";
 @import "ceaser-easing";
-@import "mixins";
-@import "splittable";
-@import "animate";
 
 $promo_bg_color: #f1efea;
 $font_color: #515151;
@@ -59,40 +56,6 @@ hr {
 // Components
 // -----
 
-// Buttons
-.button {
-  width: 100%;
-  line-height: 2.2em;
-  display: inline-block;
-  padding: 0 2em;
-  font-family: 'Metro Nova W01 Italic', sans-serif;
-  font-size: 1.2em;
-  text-transform: lowercase;
-  text-align: center;
-  text-decoration: none;
-  border: 4px solid;
-}
-
-@mixin button($btn_font_color, $btn_bg_color) {
-  .button:link, .button:visited {
-    background-color: $btn_bg_color;
-    color: $btn_font_color;
-    border-color: $btn_font_color;
-  }
-
-  .button:hover, .button:active {
-    background-color: $btn_font_color;
-    color: $btn_bg_color !important;
-    border-color: $btn_font_color;
-  }
-}
-
-button.button {
-  line-height: normal;
-}
-
-@include button($font_color, $bg_color);
-
 .group {
   margin: 10px 0;
 }
@@ -101,40 +64,4 @@ button.button {
   font-size: 20px;
   font-weight: bold;
   font-family: 'Metro Nova W01 Italic', sans-serif;
-}
-
-// -----
-// Layouts
-// -----
-
-.container {
-  width: 960px;
-  margin: 0 auto;
-
-  @include bp-medium {
-    width: auto;
-    padding: 10px;
-  }
-}
-
-// Header
-.header {
-  text-align: center;
-}
-
-// Contents
-.wrapper {
-  width: 100%;
-  text-align: center;
-}
-
-// Sections
-.section {
-
-}
-
-// Footer
-.footer {
-  margin: 0 0 15px;
-  text-align: center;
 }
